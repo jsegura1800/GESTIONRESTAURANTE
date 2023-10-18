@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="superTitulo">Mesero</h1>
+
+    <div class="mesas">
+
+        <div class="mesa disponible" id="mesa1">
+            <p>Mesa 1</p>
+            <button onclick="tomarOrden(1)">Tomar Orden</button>
+        </div>
+        <div class="mesa disponible" id="mesa2">
+            <p>Mesa 2</p>
+            <button onclick="tomarOrden(2)">Tomar Orden</button>
+        </div>
+        <div class="mesa disponible" id="mesa3">
+            <p>Mesa 3</p>
+            <button onclick="tomarOrden(3)">Tomar Orden</button>
+        </div>
+        <div class="mesa disponible" id="mesa4">
+            <p>Mesa 4</p>
+            <button onclick="tomarOrden(4)">Tomar Orden</button>
+        </div>
+        
+    </div>
+    <div id="orden-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2>Tomar Orden</h2>
+            <div id="orden-mesa"></div>
+            <button onclick="enviarOrden()">Enviar Orden</button>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="boton der">
+        <a href="../HTML/index.html">
+            <button onclick="">Salir</button>
+        </a>
+    </div>
+</footer>
+
+<script src="../JS/script.js"></script>
+
+</html>
