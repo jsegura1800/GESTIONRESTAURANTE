@@ -9,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     // Puedes utilizar AJAX, Fetch API o cualquier otro método para enviar los datos al servidor.
 
     // Supongamos que se utiliza Fetch API para enviar los datos al servidor.
-    fetch("verificar_login.php", {
+    fetch("../PHP/verificar_login.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
